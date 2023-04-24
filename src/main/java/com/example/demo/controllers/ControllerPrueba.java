@@ -9,6 +9,7 @@ import com.example.demo.services.ServicesProducto;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class ControllerPrueba {
@@ -52,6 +53,35 @@ public class ControllerPrueba {
 
     @PostMapping("/productos/nuevo")
     public RedirectView guardarProducto(@ModelAttribute("producto") Producto producto, Model model) {
+        productoServices.save(producto);
+        return new RedirectView("/productos");
+    }
+
+    @GetMapping("/productos/delete/{id}")
+    public RedirectView deleteProducto(@PathVariable int id){
+        productoServices.deleteProducto(id);
+        return new RedirectView("/productos");
+    }
+
+
+    @GetMapping("/productos/edit/{id}")
+    public String editProducto(@PathVariable int id, Model model){
+        Optional<Producto> aux = productoServices.findById(id);
+        Producto producto = aux.orElseThrow(() ->
+                new RuntimeException("El producto no existe")
+        );
+        model.addAttribute("producto", producto);
+        return ("modificarProducto");
+    }
+
+    @PostMapping("/productos/edit/{id}")
+    public Object saveProduct(@ModelAttribute("producto") Producto producto, @PathVariable int id, Model model) {
+        String mensaje = new String("null");
+        if(!mensaje.equals("null")){
+            model.addAttribute("mensaje", mensaje);
+            return "/error";
+        }
+        producto.setId(id);
         productoServices.save(producto);
         return new RedirectView("/productos");
     }
