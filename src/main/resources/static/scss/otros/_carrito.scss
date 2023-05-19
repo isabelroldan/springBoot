@@ -1,0 +1,87 @@
+
+/// Estilos para el contenedor principal.
+///
+/// Clase que define el estilo del contenedor principal.
+/// Utiliza flexbox para alinear los elementos verticalmente y centrarlos.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+/// ```
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /// Estilos para la tabla dentro del contenedor.
+  ///
+  /// Clase que define el estilo de la tabla dentro del contenedor principal.
+  /// Centra el contenido de la tabla y aplica márgenes a las celdas del encabezado y el cuerpo.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="wrapper">
+  ///   <table>
+  ///     ...
+  ///   </table>
+  /// </div>
+  ///
+    table{
+      text-align: center;
+
+
+      /// Estilos para el encabezado de la tabla.
+      ///
+      /// Clase que define el estilo del encabezado de la tabla.
+      /// Aplica un margen inferior a las filas del encabezado.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="wrapper">
+      ///   <table>
+      ///     <thead>
+      ///       <tr>
+      ///         ...
+      ///       </tr>
+      ///     </thead>
+      ///     ...
+      ///   </table>
+      /// </div>
+      ///
+      thead{
+        margin-bottom: 2%;
+        tr{
+          th{
+            margin-right: 5%;
+          }
+        }
+      }
+
+      /// Estilos para el cuerpo de la tabla.
+      ///
+      /// Clase que define el estilo del cuerpo de la tabla.
+      /// Aplica un margen derecho a las celdas del cuerpo.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="wrapper">
+      ///   <table>
+      ///     <tbody>
+      ///       <tr>
+      ///         ...
+      ///       </tr>
+      ///     </tbody>
+      ///     ...
+      ///   </table>
+      /// </div>
+      ///
+      tbody{
+        tr{
+          td{
+            margin-right: 5%;
+          }
+        }
+
+    }
+  }
+}

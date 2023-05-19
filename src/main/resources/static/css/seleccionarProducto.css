@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.wrapper {
+  text-align: center;
+}
+.wrapper .seleccionador form .campos {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.wrapper .seleccionador form .campos label {
+  margin-bottom: 3%;
+}
+.wrapper .seleccionador form .campos input {
+  margin-bottom: 3%;
+  width: 30%;
+}
+.wrapper .seleccionador form button {
+  color: white;
+  background-color: #000000;
+  padding: 10px 30px;
+}
+
+.wrapper {
+  /*margin: 0 auto;
+  max-width: 960px;*/
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Estilos para el menú */
+.menu {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+}
+.menu .menu-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.menu .menu-item a {
+  color: #000000;
+  text-decoration: none;
+}
+.menu .menu-item .sub-menu {
+  display: none;
+  background-color: #a6a6a6;
+  padding: 10px;
+}
+.menu .menu-item .sub-menu li {
+  margin-bottom: 5px;
+}
+
+.menu-item:hover .sub-menu {
+  display: block;
+}

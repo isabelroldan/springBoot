@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliminar Producto</title>
+    <link href="/css/eliminarProducto.css" rel="stylesheet" />
+</head>
+<body>
+<!--Menu-->
+<div class="wrapper">
+    <!--Menu-->
+    <nav class="menu">
+        <ol>
+            <li class="menu-item"><a href="/productos">Inicio</a></li>
+            <li class="menu-item">
+                <a href="#0">Producto</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="/productos">Ver productos</a></li>
+                    <li class="menu-item"><a href="/productos/nuevo">Añadir producto</a></li>
+                    <li class="menu-item"><a href="/productos/edit">Editar producto</a></li>
+                    <li class="menu-item"><a href="/productos/delete">Borrar producto</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="/carrito">🛒</a></li>
+        </ol>
+    </nav>
+
+
+<div class="contenedor">
+    <h1>Eliminar Producto</h1>
+    <div class="contenido">
+        <p>¿Estás seguro de que deseas eliminar este producto?</p>
+        <form id="deleteForm" th:action="@{/productos/delete}" method="post">
+            <input type="text" id="productId" name="id" placeholder="Ingrese el ID del producto" required/>
+            <button type="submit" >Eliminar</button>
+        </form>
+    </div>
+</div>
+</div>
+<script>
+    // Confirmación antes de enviar el formulario
+    document.getElementById('deleteForm').addEventListener('submit', function (event) {
+        var confirmDelete = confirm('¿Estás seguro de que deseas eliminar este producto?');
+        if (!confirmDelete) {
+            event.preventDefault(); // Cancelar el envío del formulario
+        }
+    });
+</script>
+</body>
+</html>

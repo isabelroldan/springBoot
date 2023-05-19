@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Carrito de Compras</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/css/carrito.css" rel="stylesheet" />
+</head>
+<body>
+<div class="wrapper">
+    <!--Menu-->
+    <nav class="menu">
+        <ol>
+            <li class="menu-item"><a href="/productos">Inicio</a></li>
+            <li class="menu-item">
+                <a href="#0">Producto</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="/productos">Ver productos</a></li>
+                    <li class="menu-item"><a href="/productos/nuevo">Añadir producto</a></li>
+                    <li class="menu-item"><a href="/productos/edit">Editar producto</a></li>
+                    <li class="menu-item"><a href="/productos/delete">Borrar producto</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="/carrito">🛒</a></li>
+        </ol>
+    </nav>
+
+
+<h1>Carrito de Compras</h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="producto : ${carrito}">
+            <td th:text="${producto.nombre}"></td>
+            <td th:text="${producto.precio}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

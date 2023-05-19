@@ -1,0 +1,2083 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SassDoc</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="SassDoc - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="Release the docs!"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">SassDoc</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-css"><a href="#undefined-css">css</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="table" data-type="css"><a href="#undefined-css-table">table</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="thead" data-type="css"><a href="#undefined-css-thead">thead</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tbody" data-type="css"><a href="#undefined-css-tbody">tbody</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".contenedor" data-type="css"><a href="#undefined-css-.contenedor">.contenedor</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".contenido" data-type="css"><a href="#undefined-css-.contenido">.contenido</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="input" data-type="css"><a href="#undefined-css-input">input</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="css"><a href="#undefined-css-button">button</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="/* Estilos para el menú */
+.menu" data-type="css"><a href="#undefined-css-/* Estilos para el menú */
+.menu">/* Estilos para el menú */ .menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".menu-item" data-type="css"><a href="#undefined-css-.menu-item">.menu-item</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="a" data-type="css"><a href="#undefined-css-a">a</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".sub-menu" data-type="css"><a href="#undefined-css-.sub-menu">.sub-menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".menu-item:hover .sub-menu" data-type="css"><a href="#undefined-css-.menu-item:hover .sub-menu">.menu-item:hover .sub-menu</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla" data-type="css"><a href="#undefined-css-border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla">border: 1px solid $color-borde; background-color: $color-fondo; /// Estilos para las celdas de la tabla. /// /// Establece el borde y el relleno de las celdas. /// /// Ejemplo de uso: /// ```scss /// .mi-tabla</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="th, td" data-type="css"><a href="#undefined-css-th, td">th, td</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="th" data-type="css"><a href="#undefined-css-th">th</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".contenedor" data-type="css"><a href="#undefined-css-.contenedor">.contenedor</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".atributos" data-type="css"><a href="#undefined-css-.atributos">.atributos</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".atributo" data-type="css"><a href="#undefined-css-.atributo">.atributo</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".boton" data-type="css"><a href="#undefined-css-.boton">.boton</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="table" data-type="css"><a href="#undefined-css-table">table</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tr:nth-child(even)" data-type="css"><a href="#undefined-css-tr:nth-child(even)">tr:nth-child(even)</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover" data-type="css"><a href="#undefined-css-background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover">background-color: lighten($color-fondo-par, 10%); } /// Estilos para las filas al pasar el cursor por encima. /// /// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color. /// /// Ejemplo de uso: /// ```html /// &lt;tr&gt;...&lt;/tr&gt; /// ``` tr:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tr:hover" data-type="css"><a href="#undefined-css-tr:hover">tr:hover</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="th, td" data-type="css"><a href="#undefined-css-th, td">th, td</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="h1" data-type="css"><a href="#undefined-css-h1">h1</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".producto" data-type="css"><a href="#undefined-css-.producto">.producto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="img" data-type="css"><a href="#undefined-css-img">img</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".info" data-type="css"><a href="#undefined-css-.info">.info</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="p" data-type="css"><a href="#undefined-css-p">p</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".nombre" data-type="css"><a href="#undefined-css-.nombre">.nombre</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".boton" data-type="css"><a href="#undefined-css-.boton">.boton</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".contenedor" data-type="css"><a href="#undefined-css-.contenedor">.contenedor</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".title-form" data-type="css"><a href="#undefined-css-.title-form">.title-form</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".productos" data-type="css"><a href="#undefined-css-.productos">.productos</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".producto" data-type="css"><a href="#undefined-css-.producto">.producto</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="label" data-type="css"><a href="#undefined-css-label">label</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".boton" data-type="css"><a href="#undefined-css-.boton">.boton</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".wrapper" data-type="css"><a href="#undefined-css-.wrapper">.wrapper</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".seleccionador" data-type="css"><a href="#undefined-css-.seleccionador">.seleccionador</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="form" data-type="css"><a href="#undefined-css-form">form</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name=".campos" data-type="css"><a href="#undefined-css-.campos">.campos</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="button" data-type="css"><a href="#undefined-css-button">button</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="lighten" data-type="function"><a href="#undefined-function-lighten">lighten</a></li><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="font-familia-titulo" data-type="function"><a href="#undefined-function-font-familia-titulo">font-familia-titulo</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-mixin"><a href="#undefined-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="tabla-estilos" data-type="mixin"><a href="#undefined-mixin-tabla-estilos">tabla-estilos</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-variable"><a href="#undefined-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="color-borde" data-type="variable"><a href="#undefined-variable-color-borde">color-borde</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-css"><h2 class="main__heading--secondary"><div class="container">css</div></h2><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /// Estilos para la tabla dentro del contenedor.
+  ///
+  /// Clase que define el estilo de la tabla dentro del contenedor principal.
+  /// Centra el contenido de la tabla y aplica márgenes a las celdas del encabezado y el cuerpo.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;wrapper&quot;&gt;
+  ///   &lt;table&gt;
+  ///     ...
+  ///   &lt;/table&gt;
+  /// &lt;/div&gt;
+  ///
+    table{
+      text-align: center;
+
+
+      /// Estilos para el encabezado de la tabla.
+      ///
+      /// Clase que define el estilo del encabezado de la tabla.
+      /// Aplica un margen inferior a las filas del encabezado.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;table&gt;
+      ///     &lt;thead&gt;
+      ///       &lt;tr&gt;
+      ///         ...
+      ///       &lt;/tr&gt;
+      ///     &lt;/thead&gt;
+      ///     ...
+      ///   &lt;/table&gt;
+      /// &lt;/div&gt;
+      ///
+      thead{
+        margin-bottom: 2%;
+        tr{
+          th{
+            margin-right: 5%;
+          }
+        }
+      }
+
+      /// Estilos para el cuerpo de la tabla.
+      ///
+      /// Clase que define el estilo del cuerpo de la tabla.
+      /// Aplica un margen derecho a las celdas del cuerpo.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;table&gt;
+      ///     &lt;tbody&gt;
+      ///       &lt;tr&gt;
+      ///         ...
+      ///       &lt;/tr&gt;
+      ///     &lt;/tbody&gt;
+      ///     ...
+      ///   &lt;/table&gt;
+      /// &lt;/div&gt;
+      ///
+      tbody{
+        tr{
+          td{
+            margin-right: 5%;
+          }
+        }
+
+    }
+  }
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define el estilo del contenedor principal. Utiliza flexbox para alinear los elementos verticalmente y centrarlos.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-table"><h3 class="item__heading"><a class="item__name" href="#css-table">table</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>table {
+  text-align: center;
+
+
+      /// Estilos para el encabezado de la tabla.
+      ///
+      /// Clase que define el estilo del encabezado de la tabla.
+      /// Aplica un margen inferior a las filas del encabezado.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;table&gt;
+      ///     &lt;thead&gt;
+      ///       &lt;tr&gt;
+      ///         ...
+      ///       &lt;/tr&gt;
+      ///     &lt;/thead&gt;
+      ///     ...
+      ///   &lt;/table&gt;
+      /// &lt;/div&gt;
+      ///
+      thead{
+        margin-bottom: 2%;
+        tr{
+          th{
+            margin-right: 5%;
+          }
+        }
+      }
+
+      /// Estilos para el cuerpo de la tabla.
+      ///
+      /// Clase que define el estilo del cuerpo de la tabla.
+      /// Aplica un margen derecho a las celdas del cuerpo.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;table&gt;
+      ///     &lt;tbody&gt;
+      ///       &lt;tr&gt;
+      ///         ...
+      ///       &lt;/tr&gt;
+      ///     &lt;/tbody&gt;
+      ///     ...
+      ///   &lt;/table&gt;
+      /// &lt;/div&gt;
+      ///
+      tbody{
+        tr{
+          td{
+            margin-right: 5%;
+          }
+        }
+
+    }
+}</code>" data-collapsed="table { ... }"><code>table { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la tabla dentro del contenedor.</p><p>Clase que define el estilo de la tabla dentro del contenedor principal. Centra el contenido de la tabla y aplica márgenes a las celdas del encabezado y el cuerpo.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;table&gt;
+      ...
+    &lt;/table&gt;
+  &lt;/div&gt;
+</code></pre></div></section><section class="main__item container item" id="undefined-css-thead"><h3 class="item__heading"><a class="item__name" href="#css-thead">thead</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>thead {
+  margin-bottom: 2%;
+        tr{
+          th{
+            margin-right: 5%;
+          }
+        }
+}</code>" data-collapsed="thead { ... }"><code>thead { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el encabezado de la tabla.</p><pre><code>  Clase que define el estilo del encabezado de la tabla.
+  Aplica un margen inferior a las filas del encabezado.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          ...
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      ...
+    &lt;/table&gt;
+  &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-tbody"><h3 class="item__heading"><a class="item__name" href="#css-tbody">tbody</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>tbody {
+  tr{
+          td{
+            margin-right: 5%;
+          }
+        }
+}</code>" data-collapsed="tbody { ... }"><code>tbody { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el cuerpo de la tabla.</p><pre><code>  Clase que define el estilo del cuerpo de la tabla.
+  Aplica un margen derecho a las celdas del cuerpo.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          ...
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+      ...
+    &lt;/table&gt;
+  &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  background-color: #ffffff;
+  text-align: center;
+
+  /// Estilos para el contenedor interno.
+  ///
+  /// Clase que define el estilo del contenedor interno dentro del contenedor principal.
+  /// Alinea el contenido al centro.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;wrapper&quot;&gt;
+  ///   &lt;div class=&quot;contenedor&quot;&gt;...&lt;/div&gt;
+  /// &lt;/div&gt;
+  ///
+  .contenedor{
+    text-align: center;
+
+    /// Estilos para el contenido dentro del contenedor.
+    ///
+    /// Clase que define el estilo del contenido dentro del contenedor interno.
+    /// Contiene un formulario y aplica estilos de disposición flexbox.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     &lt;div class=&quot;contenido&quot;&gt;...&lt;/div&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    ///
+    .contenido{
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        /// Estilos para los campos de entrada en el formulario.
+        ///
+        /// Clase que define el estilo de los campos de entrada dentro del formulario.
+        /// Establece el ancho y el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;contenido&quot;&gt;
+        ///       &lt;form&gt;
+        ///         &lt;input type=&quot;text&quot;&gt;...&lt;/input&gt;
+        ///         ...
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        input{
+          width: 30%;
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón en el formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color de fondo, el color del texto y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;contenido&quot;&gt;
+        ///       &lt;form&gt;
+        ///         ...
+        ///         &lt;button&gt;...&lt;/button&gt;
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        button{
+          background-color: black;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define el estilo del contenedor principal. Establece el color de fondo y alinea el contenido al centro.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.contenedor"><h3 class="item__heading"><a class="item__name" href="#css-.contenedor">.contenedor</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contenedor {
+  text-align: center;
+
+    /// Estilos para el contenido dentro del contenedor.
+    ///
+    /// Clase que define el estilo del contenido dentro del contenedor interno.
+    /// Contiene un formulario y aplica estilos de disposición flexbox.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     &lt;div class=&quot;contenido&quot;&gt;...&lt;/div&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    ///
+    .contenido{
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        /// Estilos para los campos de entrada en el formulario.
+        ///
+        /// Clase que define el estilo de los campos de entrada dentro del formulario.
+        /// Establece el ancho y el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;contenido&quot;&gt;
+        ///       &lt;form&gt;
+        ///         &lt;input type=&quot;text&quot;&gt;...&lt;/input&gt;
+        ///         ...
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        input{
+          width: 30%;
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón en el formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color de fondo, el color del texto y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;contenido&quot;&gt;
+        ///       &lt;form&gt;
+        ///         ...
+        ///         &lt;button&gt;...&lt;/button&gt;
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        button{
+          background-color: black;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+    }
+}</code>" data-collapsed=".contenedor { ... }"><code>.contenedor { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor interno.</p><p>Clase que define el estilo del contenedor interno dentro del contenedor principal. Alinea el contenido al centro.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;contenedor&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre></div></section><section class="main__item container item" id="undefined-css-.contenido"><h3 class="item__heading"><a class="item__name" href="#css-.contenido">.contenido</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contenido {
+  form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        /// Estilos para los campos de entrada en el formulario.
+        ///
+        /// Clase que define el estilo de los campos de entrada dentro del formulario.
+        /// Establece el ancho y el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;contenido&quot;&gt;
+        ///       &lt;form&gt;
+        ///         &lt;input type=&quot;text&quot;&gt;...&lt;/input&gt;
+        ///         ...
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        input{
+          width: 30%;
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón en el formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color de fondo, el color del texto y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;contenido&quot;&gt;
+        ///       &lt;form&gt;
+        ///         ...
+        ///         &lt;button&gt;...&lt;/button&gt;
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        button{
+          background-color: black;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+}</code>" data-collapsed=".contenido { ... }"><code>.contenido { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenido dentro del contenedor.</p><pre><code>Clase que define el estilo del contenido dentro del contenedor interno.
+Contiene un formulario y aplica estilos de disposición flexbox.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div class=&quot;contenedor&quot;&gt;
+    &lt;div class=&quot;contenido&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-input"><h3 class="item__heading"><a class="item__name" href="#css-input">input</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>input {
+  width: 30%;
+          margin-bottom: 3%;
+}</code>" data-collapsed="input { ... }"><code>input { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos de entrada en el formulario.</p><pre><code>    Clase que define el estilo de los campos de entrada dentro del formulario.
+    Establece el ancho y el margen inferior.
+
+    Ejemplo de uso:
+    ```html
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;div class=&quot;contenedor&quot;&gt;
+        &lt;div class=&quot;contenido&quot;&gt;
+          &lt;form&gt;
+            &lt;input type=&quot;text&quot;&gt;...&lt;/input&gt;
+            ...
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  background-color: black;
+          color: white;
+          padding: 10px 30px;
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón en el formulario.</p><pre><code>    Clase que define el estilo del botón dentro del formulario.
+    Establece el color de fondo, el color del texto y el relleno.
+
+    Ejemplo de uso:
+    ```html
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;div class=&quot;contenedor&quot;&gt;
+        &lt;div class=&quot;contenido&quot;&gt;
+          &lt;form&gt;
+            ...
+            &lt;button&gt;...&lt;/button&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  /*margin: 0 auto;
+  max-width: 960px;*/
+  justify-content: center;
+  align-items: center;
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define el estilo del contenedor principal. Centra el contenido horizontal y verticalmente.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-/* Estilos para el menú */
+.menu"><h3 class="item__heading"><a class="item__name" href="#css-/* Estilos para el menú */
+.menu">/* Estilos para el menú */ .menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>/* Estilos para el menú */
+.menu {
+  background-color: $fondo-menu;
+  color: $texto-menu;
+  padding: 10px;
+
+  /// Estilos para los elementos del menú.
+  ///
+  /// Clase que define el estilo de los elementos del menú.
+  /// Los elementos se muestran en línea y tienen un margen derecho.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;nav class=&quot;menu&quot;&gt;
+  ///   &lt;ul&gt;
+  ///     &lt;li class=&quot;menu-item&quot;&gt;...&lt;/li&gt;
+  ///   &lt;/ul&gt;
+  /// &lt;/nav&gt;
+  ///
+  .menu-item {
+    display: inline-block;
+    margin-right: 10px;
+
+    /// Estilos para los enlaces dentro del menú.
+    ///
+    /// Clase que define el estilo de los enlaces dentro de los elementos del menú.
+    /// Establece el color del texto y elimina la decoración de subrayado.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;nav class=&quot;menu&quot;&gt;
+    ///   &lt;ul&gt;
+    ///     &lt;li class=&quot;menu-item&quot;&gt;
+    ///       &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+    ///     &lt;/li&gt;
+    ///   &lt;/ul&gt;
+    /// &lt;/nav&gt;
+    ///
+    a {
+      color: $texto-menu;
+      text-decoration: none;
+    }
+
+    /// Estilos para los submenús del menú.
+    ///
+    /// Clase que define el estilo de los submenús dentro de los elementos del menú.
+    /// Los submenús se ocultan inicialmente y tienen un color de fondo y un relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;nav class=&quot;menu&quot;&gt;
+    ///   &lt;ul&gt;
+    ///     &lt;li class=&quot;menu-item&quot;&gt;
+    ///       &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+    ///       &lt;ul class=&quot;sub-menu&quot;&gt;...&lt;/ul&gt;
+    ///     &lt;/li&gt;
+    ///   &lt;/ul&gt;
+    /// &lt;/nav&gt;
+    ///
+    .sub-menu {
+      display: none;
+      background-color: #a6a6a6;
+      padding: 10px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}</code>" data-collapsed="/* Estilos para el menú */
+.menu { ... }"><code>/* Estilos para el menú */
+.menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el menú.</p><p>Clase que define el estilo del menú. Establece el color de fondo, el color del texto y el relleno.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;nav class=&quot;menu&quot;&gt;...&lt;/nav&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.menu-item"><h3 class="item__heading"><a class="item__name" href="#css-.menu-item">.menu-item</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu-item {
+  display: inline-block;
+    margin-right: 10px;
+
+    /// Estilos para los enlaces dentro del menú.
+    ///
+    /// Clase que define el estilo de los enlaces dentro de los elementos del menú.
+    /// Establece el color del texto y elimina la decoración de subrayado.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;nav class=&quot;menu&quot;&gt;
+    ///   &lt;ul&gt;
+    ///     &lt;li class=&quot;menu-item&quot;&gt;
+    ///       &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+    ///     &lt;/li&gt;
+    ///   &lt;/ul&gt;
+    /// &lt;/nav&gt;
+    ///
+    a {
+      color: $texto-menu;
+      text-decoration: none;
+    }
+
+    /// Estilos para los submenús del menú.
+    ///
+    /// Clase que define el estilo de los submenús dentro de los elementos del menú.
+    /// Los submenús se ocultan inicialmente y tienen un color de fondo y un relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;nav class=&quot;menu&quot;&gt;
+    ///   &lt;ul&gt;
+    ///     &lt;li class=&quot;menu-item&quot;&gt;
+    ///       &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+    ///       &lt;ul class=&quot;sub-menu&quot;&gt;...&lt;/ul&gt;
+    ///     &lt;/li&gt;
+    ///   &lt;/ul&gt;
+    /// &lt;/nav&gt;
+    ///
+    .sub-menu {
+      display: none;
+      background-color: #a6a6a6;
+      padding: 10px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+}</code>" data-collapsed=".menu-item { ... }"><code>.menu-item { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los elementos del menú.</p><p>Clase que define el estilo de los elementos del menú. Los elementos se muestran en línea y tienen un margen derecho.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;nav class=&quot;menu&quot;&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;menu-item&quot;&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre></div></section><section class="main__item container item" id="undefined-css-a"><h3 class="item__heading"><a class="item__name" href="#css-a">a</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>a {
+  color: $texto-menu;
+      text-decoration: none;
+}</code>" data-collapsed="a { ... }"><code>a { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los enlaces dentro del menú.</p><pre><code>Clase que define el estilo de los enlaces dentro de los elementos del menú.
+Establece el color del texto y elimina la decoración de subrayado.
+
+Ejemplo de uso:
+```html
+&lt;nav class=&quot;menu&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.sub-menu"><h3 class="item__heading"><a class="item__name" href="#css-.sub-menu">.sub-menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.sub-menu {
+  display: none;
+      background-color: #a6a6a6;
+      padding: 10px;
+
+      li {
+        margin-bottom: 5px;
+      }
+}</code>" data-collapsed=".sub-menu { ... }"><code>.sub-menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los submenús del menú.</p><pre><code>Clase que define el estilo de los submenús dentro de los elementos del menú.
+Los submenús se ocultan inicialmente y tienen un color de fondo y un relleno.
+
+Ejemplo de uso:
+```html
+&lt;nav class=&quot;menu&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;...&lt;/a&gt;
+      &lt;ul class=&quot;sub-menu&quot;&gt;...&lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.menu-item:hover .sub-menu"><h3 class="item__heading"><a class="item__name" href="#css-.menu-item:hover .sub-menu">.menu-item:hover .sub-menu</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.menu-item:hover .sub-menu {
+  display: block;
+}</code>" data-collapsed=".menu-item:hover .sub-menu { ... }"><code>.menu-item:hover .sub-menu { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para mostrar el submenú al pasar el ratón por encima.</p><p>Clase que define el estilo para mostrar el submenú cuando se pasa el ratón por encima de un elemento del menú.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;nav class=&quot;menu&quot;&gt;
+  &lt;ul&gt;
+    &lt;li class=&quot;menu-item&quot;&gt;...&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/na</code></pre></div></section><section class="main__item container item" id="undefined-css-border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla"><h3 class="item__heading"><a class="item__name" href="#css-border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla">border: 1px solid $color-borde; background-color: $color-fondo; /// Estilos para las celdas de la tabla. /// /// Establece el borde y el relleno de las celdas. /// /// Ejemplo de uso: /// ```scss /// .mi-tabla</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  th, td {
+    border: 1px solid $color-borde;
+    padding: 10px;
+  }
+
+  /// Estilos para las cabeceras de columna de la tabla.
+  ///
+  /// Establece el color de fondo y el color del texto de las cabeceras de columna.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  th {
+    background-color: $color-cabecera;
+    color: $color-texto-cabecera;
+  }
+}</code>" data-collapsed="border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla { ... }"><code>border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la tabla.</p><p>Establece el borde y el color de fondo de la tabla.</p><p>Ejemplo de uso:</p><pre><code class="language-scss">  .mi-tabla {
+    @include tabla-estilos;
+  }</code></pre></div></section><section class="main__item container item" id="undefined-css-th, td"><h3 class="item__heading"><a class="item__name" href="#css-th, td">th, td</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>th, td {
+  border: 1px solid $color-borde;
+    padding: 10px;
+}</code>" data-collapsed="th, td { ... }"><code>th, td { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las celdas de la tabla.</p><p>Establece el borde y el relleno de las celdas.</p><p>Ejemplo de uso:</p><pre><code class="language-scss">  .mi-tabla {
+    @include tabla-estilos;
+  }</code></pre></div></section><section class="main__item container item" id="undefined-css-th"><h3 class="item__heading"><a class="item__name" href="#css-th">th</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>th {
+  background-color: $color-cabecera;
+    color: $color-texto-cabecera;
+}</code>" data-collapsed="th { ... }"><code>th { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las cabeceras de columna de la tabla.</p><p>Establece el color de fondo y el color del texto de las cabeceras de columna.</p><p>Ejemplo de uso:</p><pre><code class="language-scss">  .mi-tabla {
+    @include tabla-estilos;
+  }</code></pre></div></section><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  text-align: center;
+  /// Estilos para el contenedor interno.
+  ///
+  /// Clase que define el estilo del contenedor interno dentro del contenedor principal.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;wrapper&quot;&gt;
+  ///   &lt;div class=&quot;contenedor&quot;&gt;...&lt;/div&gt;
+  /// &lt;/div&gt;
+  ///
+  .contenedor{
+    /// Estilos para los atributos dentro del contenedor.
+    ///
+    /// Clase que define el estilo de los atributos dentro del contenedor interno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     &lt;div class=&quot;atributos&quot;&gt;...&lt;/div&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    ///
+    .atributos{
+      form{
+        /// Estilos para los atributos dentro del formulario.
+        ///
+        /// Clase que define el estilo de los atributos dentro del formulario.
+        /// Establece el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;atributos&quot;&gt;
+        ///       &lt;form&gt;
+        ///         &lt;div class=&quot;atributo&quot;&gt;...&lt;/div&gt;
+        ///         ...
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        .atributo{
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón dentro del formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color del texto, el color de fondo y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;atributos&quot;&gt;
+        ///       &lt;form&gt;
+        ///         ...
+        ///         &lt;div class=&quot;boton&quot;&gt;
+        ///           &lt;button&gt;...&lt;/button&gt;
+        ///         &lt;/div&gt;
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        .boton{
+          button{
+            color: white;
+            background-color: black;
+            padding: 10px 30px;
+          }
+        }
+      }
+
+    }
+  }
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define el estilo del contenedor principal. Centra el texto horizontalmente.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.contenedor"><h3 class="item__heading"><a class="item__name" href="#css-.contenedor">.contenedor</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contenedor {
+  /// Estilos para los atributos dentro del contenedor.
+    ///
+    /// Clase que define el estilo de los atributos dentro del contenedor interno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     &lt;div class=&quot;atributos&quot;&gt;...&lt;/div&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    ///
+    .atributos{
+      form{
+        /// Estilos para los atributos dentro del formulario.
+        ///
+        /// Clase que define el estilo de los atributos dentro del formulario.
+        /// Establece el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;atributos&quot;&gt;
+        ///       &lt;form&gt;
+        ///         &lt;div class=&quot;atributo&quot;&gt;...&lt;/div&gt;
+        ///         ...
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        .atributo{
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón dentro del formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color del texto, el color de fondo y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;atributos&quot;&gt;
+        ///       &lt;form&gt;
+        ///         ...
+        ///         &lt;div class=&quot;boton&quot;&gt;
+        ///           &lt;button&gt;...&lt;/button&gt;
+        ///         &lt;/div&gt;
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        .boton{
+          button{
+            color: white;
+            background-color: black;
+            padding: 10px 30px;
+          }
+        }
+      }
+
+    }
+}</code>" data-collapsed=".contenedor { ... }"><code>.contenedor { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor interno.</p><p>Clase que define el estilo del contenedor interno dentro del contenedor principal.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;contenedor&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre></div></section><section class="main__item container item" id="undefined-css-.atributos"><h3 class="item__heading"><a class="item__name" href="#css-.atributos">.atributos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.atributos {
+  form{
+        /// Estilos para los atributos dentro del formulario.
+        ///
+        /// Clase que define el estilo de los atributos dentro del formulario.
+        /// Establece el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;atributos&quot;&gt;
+        ///       &lt;form&gt;
+        ///         &lt;div class=&quot;atributo&quot;&gt;...&lt;/div&gt;
+        ///         ...
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        .atributo{
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón dentro del formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color del texto, el color de fondo y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     &lt;div class=&quot;atributos&quot;&gt;
+        ///       &lt;form&gt;
+        ///         ...
+        ///         &lt;div class=&quot;boton&quot;&gt;
+        ///           &lt;button&gt;...&lt;/button&gt;
+        ///         &lt;/div&gt;
+        ///       &lt;/form&gt;
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        ///
+        .boton{
+          button{
+            color: white;
+            background-color: black;
+            padding: 10px 30px;
+          }
+        }
+      }
+}</code>" data-collapsed=".atributos { ... }"><code>.atributos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los atributos dentro del contenedor.</p><pre><code>Clase que define el estilo de los atributos dentro del contenedor interno.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div class=&quot;contenedor&quot;&gt;
+    &lt;div class=&quot;atributos&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.atributo"><h3 class="item__heading"><a class="item__name" href="#css-.atributo">.atributo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.atributo {
+  margin-bottom: 3%;
+}</code>" data-collapsed=".atributo { ... }"><code>.atributo { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los atributos dentro del formulario.</p><pre><code>    Clase que define el estilo de los atributos dentro del formulario.
+    Establece el margen inferior.
+
+    Ejemplo de uso:
+    ```html
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;div class=&quot;contenedor&quot;&gt;
+        &lt;div class=&quot;atributos&quot;&gt;
+          &lt;form&gt;
+            &lt;div class=&quot;atributo&quot;&gt;...&lt;/div&gt;
+            ...
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.boton"><h3 class="item__heading"><a class="item__name" href="#css-.boton">.boton</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.boton {
+  button{
+            color: white;
+            background-color: black;
+            padding: 10px 30px;
+          }
+}</code>" data-collapsed=".boton { ... }"><code>.boton { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón dentro del formulario.</p><pre><code>    Clase que define el estilo del botón dentro del formulario.
+    Establece el color del texto, el color de fondo y el relleno.
+
+    Ejemplo de uso:
+    ```html
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;div class=&quot;contenedor&quot;&gt;
+        &lt;div class=&quot;atributos&quot;&gt;
+          &lt;form&gt;
+            ...
+            &lt;div class=&quot;boton&quot;&gt;
+              &lt;button&gt;...&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  text-align: center;
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define el estilo del contenedor principal. Centra el texto horizontalmente.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-table"><h3 class="item__heading"><a class="item__name" href="#css-table">table</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  /// Utiliza el mixin `tabla-estilos` para aplicar estilos a la tabla.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;table class=&quot;tabla-productos&quot;&gt;
+  ///   &lt;thead&gt;...&lt;/thead&gt;
+  ///   &lt;tbody&gt;...&lt;/tbody&gt;
+  /// &lt;/table&gt;
+  /// ```
+  @include tabla-estilos;
+}</code>" data-collapsed="table { ... }"><code>table { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la tabla de productos.</p><p>Clase que define los estilos de la tabla de productos. Incluye la anchura, el colapso de borde y el margen superior.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;table class=&quot;tabla-productos&quot;&gt;...&lt;/table&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-tr:nth-child(even)"><h3 class="item__heading"><a class="item__name" href="#css-tr:nth-child(even)">tr:nth-child(even)</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>tr:nth-child(even) {
+  background-color: $color-fondo-par;
+
+  /// Utiliza la función `lighten()` para oscurecer el color de fondo de las filas pares.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;tr&gt;...&lt;/tr&gt;
+  /// ```
+  background-color: lighten($color-fondo-par, 10%);
+}</code>" data-collapsed="tr:nth-child(even) { ... }"><code>tr:nth-child(even) { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las filas pares de la tabla.</p><p>Establece el color de fondo de las filas pares utilizando una variable de color y una función para oscurecer el color de fondo.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;tr&gt;...&lt;/tr&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover"><h3 class="item__heading"><a class="item__name" href="#css-background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover">background-color: lighten($color-fondo-par, 10%); } /// Estilos para las filas al pasar el cursor por encima. /// /// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color. /// /// Ejemplo de uso: /// ```html /// &lt;tr&gt;...&lt;/tr&gt; /// ``` tr:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover {
+  background-color: $color-fondo-hover;
+}</code>" data-collapsed="background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover { ... }"><code>background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// &lt;tr&gt;...&lt;/tr&gt;
+/// ```
+tr:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Utiliza la función <code>lighten()</code> para oscurecer el color de fondo de las filas pares.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;tr&gt;...&lt;/tr&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-tr:hover"><h3 class="item__heading"><a class="item__name" href="#css-tr:hover">tr:hover</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>tr:hover {
+  background-color: $color-fondo-hover;
+}</code>" data-collapsed="tr:hover { ... }"><code>tr:hover { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las filas al pasar el cursor por encima.</p><p>Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;tr&gt;...&lt;/tr&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-th, td"><h3 class="item__heading"><a class="item__name" href="#css-th, td">th, td</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>th, td {
+  padding: 10px;
+  text-align: left;
+}</code>" data-collapsed="th, td { ... }"><code>th, td { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las celdas de encabezado y datos.</p><p>Establece el relleno y la alineación del texto para las celdas de encabezado y datos.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;th&gt;...&lt;/th&gt;
+&lt;td&gt;...&lt;/td&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-h1"><h3 class="item__heading"><a class="item__name" href="#css-h1">h1</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>h1 {
+  color: $color-titulo;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+
+  /* Utilizando una función para aplicar estilos de fuente */
+  font-family: font-familia-titulo();
+}</code>" data-collapsed="h1 { ... }"><code>h1 { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el título de la página.</p><p>Establece el color, el tamaño de fuente, el margen superior y la alineación del texto para el título de la página. Utiliza una función para obtener la familia de fuentes del título.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;h1&gt;...&lt;/h1&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.producto"><h3 class="item__heading"><a class="item__name" href="#css-.producto">.producto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.producto {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10%;
+
+  /// Estilos para la imagen dentro del contenedor de productos.
+  ///
+  /// Clase que define los estilos de la imagen dentro del contenedor de productos.
+  /// Establece el margen derecho, el tamaño máximo, el ancho y la altura.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;producto&quot;&gt;
+  ///   &lt;img src=&quot;...&quot; alt=&quot;...&quot; /&gt;
+  ///   ...
+  /// &lt;/div&gt;
+  /// ```
+  img {
+    margin-right: 10px;
+    max-width: $imagen-tamano-maximo;
+    width: 100%;
+    height: auto;
+  }
+
+  /// Estilos para la información dentro del contenedor de productos.
+  ///
+  /// Clase que define los estilos de la información dentro del contenedor de productos.
+  /// Utiliza flexbox para organizar los elementos en una columna.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;producto&quot;&gt;
+  ///   ...
+  ///   &lt;div class=&quot;info&quot;&gt;...&lt;/div&gt;
+  /// &lt;/div&gt;
+  /// ```
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    /// Estilos para los párrafos dentro de la información.
+    ///
+    /// Clase que define los estilos de los párrafos dentro de la información.
+    /// Establece el margen y el relleno inferior.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;producto&quot;&gt;
+    ///   ...
+    ///   &lt;div class=&quot;info&quot;&gt;
+    ///     &lt;p&gt;...&lt;/p&gt;
+    ///     ...
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    p {
+      margin: 0;
+      padding-bottom: 30px;
+
+      /// Estilos para el nombre dentro de los párrafos.
+      ///
+      /// Clase que define los estilos del nombre dentro de los párrafos.
+      /// Establece el tamaño de fuente y el color del texto.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;producto&quot;&gt;
+      ///   ...
+      ///   &lt;div class=&quot;info&quot;&gt;
+      ///     &lt;p&gt;
+      ///       &lt;span class=&quot;nombre&quot;&gt;...&lt;/span&gt;
+      ///     &lt;/p&gt;
+      ///     ...
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .nombre{
+        font-size: 350%;
+        color: gray;
+      }
+
+      .precio{
+        font-size: 200%;
+        font-weight: bold;
+      }
+    }
+
+    /// Estilos para el botón dentro del contenedor de productos.
+    ///
+    /// Clase que define los estilos del botón dentro del contenedor de productos.
+    /// Establece la visualización como bloque, el margen superior, el color de fondo, el color del texto, el borde y el relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;producto&quot;&gt;
+    ///   ...
+    ///   &lt;div class=&quot;info&quot;&gt;
+    ///     ...
+    ///     &lt;button class=&quot;boton&quot;&gt;...&lt;/button&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    .boton {
+      display: block;
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 80px;
+    }
+  }
+}</code>" data-collapsed=".producto { ... }"><code>.producto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor de productos.</p><p>Clase que define los estilos del contenedor de productos. Utiliza flexbox para alinear los elementos en la parte inferior y establece un margen inferior.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;producto&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-img"><h3 class="item__heading"><a class="item__name" href="#css-img">img</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>img {
+  margin-right: 10px;
+    max-width: $imagen-tamano-maximo;
+    width: 100%;
+    height: auto;
+}</code>" data-collapsed="img { ... }"><code>img { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la imagen dentro del contenedor de productos.</p><p>Clase que define los estilos de la imagen dentro del contenedor de productos. Establece el margen derecho, el tamaño máximo, el ancho y la altura.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;producto&quot;&gt;
+    &lt;img src=&quot;...&quot; alt=&quot;...&quot; /&gt;
+    ...
+  &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.info"><h3 class="item__heading"><a class="item__name" href="#css-.info">.info</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.info {
+  display: flex;
+    flex-direction: column;
+
+    /// Estilos para los párrafos dentro de la información.
+    ///
+    /// Clase que define los estilos de los párrafos dentro de la información.
+    /// Establece el margen y el relleno inferior.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;producto&quot;&gt;
+    ///   ...
+    ///   &lt;div class=&quot;info&quot;&gt;
+    ///     &lt;p&gt;...&lt;/p&gt;
+    ///     ...
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    p {
+      margin: 0;
+      padding-bottom: 30px;
+
+      /// Estilos para el nombre dentro de los párrafos.
+      ///
+      /// Clase que define los estilos del nombre dentro de los párrafos.
+      /// Establece el tamaño de fuente y el color del texto.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;producto&quot;&gt;
+      ///   ...
+      ///   &lt;div class=&quot;info&quot;&gt;
+      ///     &lt;p&gt;
+      ///       &lt;span class=&quot;nombre&quot;&gt;...&lt;/span&gt;
+      ///     &lt;/p&gt;
+      ///     ...
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .nombre{
+        font-size: 350%;
+        color: gray;
+      }
+
+      .precio{
+        font-size: 200%;
+        font-weight: bold;
+      }
+    }
+
+    /// Estilos para el botón dentro del contenedor de productos.
+    ///
+    /// Clase que define los estilos del botón dentro del contenedor de productos.
+    /// Establece la visualización como bloque, el margen superior, el color de fondo, el color del texto, el borde y el relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;producto&quot;&gt;
+    ///   ...
+    ///   &lt;div class=&quot;info&quot;&gt;
+    ///     ...
+    ///     &lt;button class=&quot;boton&quot;&gt;...&lt;/button&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    .boton {
+      display: block;
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 80px;
+    }
+}</code>" data-collapsed=".info { ... }"><code>.info { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la información dentro del contenedor de productos.</p><p>Clase que define los estilos de la información dentro del contenedor de productos. Utiliza flexbox para organizar los elementos en una columna.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;producto&quot;&gt;
+    ...
+    &lt;div class=&quot;info&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-p"><h3 class="item__heading"><a class="item__name" href="#css-p">p</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>p {
+  margin: 0;
+      padding-bottom: 30px;
+
+      /// Estilos para el nombre dentro de los párrafos.
+      ///
+      /// Clase que define los estilos del nombre dentro de los párrafos.
+      /// Establece el tamaño de fuente y el color del texto.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;producto&quot;&gt;
+      ///   ...
+      ///   &lt;div class=&quot;info&quot;&gt;
+      ///     &lt;p&gt;
+      ///       &lt;span class=&quot;nombre&quot;&gt;...&lt;/span&gt;
+      ///     &lt;/p&gt;
+      ///     ...
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .nombre{
+        font-size: 350%;
+        color: gray;
+      }
+
+      .precio{
+        font-size: 200%;
+        font-weight: bold;
+      }
+}</code>" data-collapsed="p { ... }"><code>p { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los párrafos dentro de la información.</p><pre><code>Clase que define los estilos de los párrafos dentro de la información.
+Establece el margen y el relleno inferior.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;producto&quot;&gt;
+  ...
+  &lt;div class=&quot;info&quot;&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+```</code></pre></div></section><section class="main__item container item" id="undefined-css-.nombre"><h3 class="item__heading"><a class="item__name" href="#css-.nombre">.nombre</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.nombre {
+  font-size: 350%;
+        color: gray;
+}</code>" data-collapsed=".nombre { ... }"><code>.nombre { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el nombre dentro de los párrafos.</p><pre><code>  Clase que define los estilos del nombre dentro de los párrafos.
+  Establece el tamaño de fuente y el color del texto.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;producto&quot;&gt;
+    ...
+    &lt;div class=&quot;info&quot;&gt;
+      &lt;p&gt;
+        &lt;span class=&quot;nombre&quot;&gt;...&lt;/span&gt;
+      &lt;/p&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ```</code></pre></div></section><section class="main__item container item" id="undefined-css-.boton"><h3 class="item__heading"><a class="item__name" href="#css-.boton">.boton</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.boton {
+  display: block;
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 80px;
+}</code>" data-collapsed=".boton { ... }"><code>.boton { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón dentro del contenedor de productos.</p><pre><code>Clase que define los estilos del botón dentro del contenedor de productos.
+Establece la visualización como bloque, el margen superior, el color de fondo, el color del texto, el borde y el relleno.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;producto&quot;&gt;
+  ...
+  &lt;div class=&quot;info&quot;&gt;
+    ...
+    &lt;button class=&quot;boton&quot;&gt;...&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```</code></pre></div></section><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  background-color: #ffffff;
+  text-align: center;
+
+  /// Estilos para el contenedor interno.
+  ///
+  /// Clase que define los estilos para el contenedor interno.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;wrapper&quot;&gt;
+  ///   &lt;div class=&quot;contenedor&quot;&gt;...&lt;/div&gt;
+  /// &lt;/div&gt;
+  /// ```
+  .contenedor {
+
+    /// Estilos para el título del formulario.
+    ///
+    /// Clase que define los estilos para el título del formulario.
+    /// Establece el color del texto utilizando una variable.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     &lt;h2 class=&quot;title-form&quot;&gt;...&lt;/h2&gt;
+    ///     ...
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    .title-form {
+      color: $color-titulo;
+    }
+
+    /// Estilos para la sección de productos.
+    ///
+    /// Clase que define los estilos para la sección de productos.
+    /// Establece el color de fondo utilizando una variable y el relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     ...
+    ///     &lt;div class=&quot;productos&quot;&gt;...&lt;/div&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    .productos {
+      background-color: $color-fondo-hover;
+      padding: 20px;
+
+      /// Estilos para cada producto en la sección de productos.
+      ///
+      /// Clase que define los estilos para cada producto en la sección de productos.
+      /// Establece el margen inferior.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;contenedor&quot;&gt;
+      ///     ...
+      ///     &lt;div class=&quot;productos&quot;&gt;
+      ///       &lt;div class=&quot;producto&quot;&gt;...&lt;/div&gt;
+      ///       ...
+      ///     &lt;/div&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .producto {
+        margin-bottom: 5%;
+
+        /// Estilos para las etiquetas dentro de cada producto.
+        ///
+        /// Clase que define los estilos para las etiquetas dentro de cada producto.
+        /// Establece el color del texto utilizando una variable y el margen derecho.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     ...
+        ///     &lt;div class=&quot;productos&quot;&gt;
+        ///       &lt;div class=&quot;producto&quot;&gt;
+        ///         &lt;label&gt;...&lt;/label&gt;
+        ///         ...
+        ///       &lt;/div&gt;
+        ///       ...
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        /// ```
+        label {
+          color: $color-texto-cabecera;
+          margin-right: 3%;
+        }
+
+        input[type=&quot;text&quot;] {
+          border: 1px solid $color-borde;
+          padding: 5px;
+        }
+      }
+
+      /// Estilos para el botón dentro de la sección de productos.
+      ///
+      /// Clase que define los estilos para el botón dentro de la sección de productos.
+      /// Establece el color de fondo y el color del texto utilizando variables, así como el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;contenedor&quot;&gt;
+      ///     ...
+      ///     &lt;div class=&quot;productos&quot;&gt;
+      ///       ...
+      ///       &lt;div class=&quot;boton&quot;&gt;
+      ///         &lt;button&gt;...&lt;/button&gt;
+      ///       &lt;/div&gt;
+      ///     &lt;/div&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .boton {
+        button {
+          background-color: $color-borde;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define los estilos para el contenedor principal. Establece el color de fondo y la alineación del texto.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.contenedor"><h3 class="item__heading"><a class="item__name" href="#css-.contenedor">.contenedor</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.contenedor {
+  /// Estilos para el título del formulario.
+    ///
+    /// Clase que define los estilos para el título del formulario.
+    /// Establece el color del texto utilizando una variable.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     &lt;h2 class=&quot;title-form&quot;&gt;...&lt;/h2&gt;
+    ///     ...
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    .title-form {
+      color: $color-titulo;
+    }
+
+    /// Estilos para la sección de productos.
+    ///
+    /// Clase que define los estilos para la sección de productos.
+    /// Establece el color de fondo utilizando una variable y el relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;contenedor&quot;&gt;
+    ///     ...
+    ///     &lt;div class=&quot;productos&quot;&gt;...&lt;/div&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    .productos {
+      background-color: $color-fondo-hover;
+      padding: 20px;
+
+      /// Estilos para cada producto en la sección de productos.
+      ///
+      /// Clase que define los estilos para cada producto en la sección de productos.
+      /// Establece el margen inferior.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;contenedor&quot;&gt;
+      ///     ...
+      ///     &lt;div class=&quot;productos&quot;&gt;
+      ///       &lt;div class=&quot;producto&quot;&gt;...&lt;/div&gt;
+      ///       ...
+      ///     &lt;/div&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .producto {
+        margin-bottom: 5%;
+
+        /// Estilos para las etiquetas dentro de cada producto.
+        ///
+        /// Clase que define los estilos para las etiquetas dentro de cada producto.
+        /// Establece el color del texto utilizando una variable y el margen derecho.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     ...
+        ///     &lt;div class=&quot;productos&quot;&gt;
+        ///       &lt;div class=&quot;producto&quot;&gt;
+        ///         &lt;label&gt;...&lt;/label&gt;
+        ///         ...
+        ///       &lt;/div&gt;
+        ///       ...
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        /// ```
+        label {
+          color: $color-texto-cabecera;
+          margin-right: 3%;
+        }
+
+        input[type=&quot;text&quot;] {
+          border: 1px solid $color-borde;
+          padding: 5px;
+        }
+      }
+
+      /// Estilos para el botón dentro de la sección de productos.
+      ///
+      /// Clase que define los estilos para el botón dentro de la sección de productos.
+      /// Establece el color de fondo y el color del texto utilizando variables, así como el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;contenedor&quot;&gt;
+      ///     ...
+      ///     &lt;div class=&quot;productos&quot;&gt;
+      ///       ...
+      ///       &lt;div class=&quot;boton&quot;&gt;
+      ///         &lt;button&gt;...&lt;/button&gt;
+      ///       &lt;/div&gt;
+      ///     &lt;/div&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .boton {
+        button {
+          background-color: $color-borde;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+    }
+}</code>" data-collapsed=".contenedor { ... }"><code>.contenedor { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor interno.</p><p>Clase que define los estilos para el contenedor interno.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;contenedor&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.title-form"><h3 class="item__heading"><a class="item__name" href="#css-.title-form">.title-form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.title-form {
+  color: $color-titulo;
+}</code>" data-collapsed=".title-form { ... }"><code>.title-form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el título del formulario.</p><pre><code>Clase que define los estilos para el título del formulario.
+Establece el color del texto utilizando una variable.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div class=&quot;contenedor&quot;&gt;
+    &lt;h2 class=&quot;title-form&quot;&gt;...&lt;/h2&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+```</code></pre></div></section><section class="main__item container item" id="undefined-css-.productos"><h3 class="item__heading"><a class="item__name" href="#css-.productos">.productos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.productos {
+  background-color: $color-fondo-hover;
+      padding: 20px;
+
+      /// Estilos para cada producto en la sección de productos.
+      ///
+      /// Clase que define los estilos para cada producto en la sección de productos.
+      /// Establece el margen inferior.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;contenedor&quot;&gt;
+      ///     ...
+      ///     &lt;div class=&quot;productos&quot;&gt;
+      ///       &lt;div class=&quot;producto&quot;&gt;...&lt;/div&gt;
+      ///       ...
+      ///     &lt;/div&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .producto {
+        margin-bottom: 5%;
+
+        /// Estilos para las etiquetas dentro de cada producto.
+        ///
+        /// Clase que define los estilos para las etiquetas dentro de cada producto.
+        /// Establece el color del texto utilizando una variable y el margen derecho.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     ...
+        ///     &lt;div class=&quot;productos&quot;&gt;
+        ///       &lt;div class=&quot;producto&quot;&gt;
+        ///         &lt;label&gt;...&lt;/label&gt;
+        ///         ...
+        ///       &lt;/div&gt;
+        ///       ...
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        /// ```
+        label {
+          color: $color-texto-cabecera;
+          margin-right: 3%;
+        }
+
+        input[type=&quot;text&quot;] {
+          border: 1px solid $color-borde;
+          padding: 5px;
+        }
+      }
+
+      /// Estilos para el botón dentro de la sección de productos.
+      ///
+      /// Clase que define los estilos para el botón dentro de la sección de productos.
+      /// Establece el color de fondo y el color del texto utilizando variables, así como el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;contenedor&quot;&gt;
+      ///     ...
+      ///     &lt;div class=&quot;productos&quot;&gt;
+      ///       ...
+      ///       &lt;div class=&quot;boton&quot;&gt;
+      ///         &lt;button&gt;...&lt;/button&gt;
+      ///       &lt;/div&gt;
+      ///     &lt;/div&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .boton {
+        button {
+          background-color: $color-borde;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+}</code>" data-collapsed=".productos { ... }"><code>.productos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para la sección de productos.</p><pre><code>Clase que define los estilos para la sección de productos.
+Establece el color de fondo utilizando una variable y el relleno.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div class=&quot;contenedor&quot;&gt;
+    ...
+    &lt;div class=&quot;productos&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```</code></pre></div></section><section class="main__item container item" id="undefined-css-.producto"><h3 class="item__heading"><a class="item__name" href="#css-.producto">.producto</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.producto {
+  margin-bottom: 5%;
+
+        /// Estilos para las etiquetas dentro de cada producto.
+        ///
+        /// Clase que define los estilos para las etiquetas dentro de cada producto.
+        /// Establece el color del texto utilizando una variable y el margen derecho.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// &lt;div class=&quot;wrapper&quot;&gt;
+        ///   &lt;div class=&quot;contenedor&quot;&gt;
+        ///     ...
+        ///     &lt;div class=&quot;productos&quot;&gt;
+        ///       &lt;div class=&quot;producto&quot;&gt;
+        ///         &lt;label&gt;...&lt;/label&gt;
+        ///         ...
+        ///       &lt;/div&gt;
+        ///       ...
+        ///     &lt;/div&gt;
+        ///   &lt;/div&gt;
+        /// &lt;/div&gt;
+        /// ```
+        label {
+          color: $color-texto-cabecera;
+          margin-right: 3%;
+        }
+
+        input[type=&quot;text&quot;] {
+          border: 1px solid $color-borde;
+          padding: 5px;
+        }
+}</code>" data-collapsed=".producto { ... }"><code>.producto { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para cada producto en la sección de productos.</p><pre><code>  Clase que define los estilos para cada producto en la sección de productos.
+  Establece el margen inferior.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;contenedor&quot;&gt;
+      ...
+      &lt;div class=&quot;productos&quot;&gt;
+        &lt;div class=&quot;producto&quot;&gt;...&lt;/div&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ```</code></pre></div></section><section class="main__item container item" id="undefined-css-label"><h3 class="item__heading"><a class="item__name" href="#css-label">label</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>label {
+  color: $color-texto-cabecera;
+          margin-right: 3%;
+}</code>" data-collapsed="label { ... }"><code>label { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para las etiquetas dentro de cada producto.</p><pre><code>    Clase que define los estilos para las etiquetas dentro de cada producto.
+    Establece el color del texto utilizando una variable y el margen derecho.
+
+    Ejemplo de uso:
+    ```html
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;div class=&quot;contenedor&quot;&gt;
+        ...
+        &lt;div class=&quot;productos&quot;&gt;
+          &lt;div class=&quot;producto&quot;&gt;
+            &lt;label&gt;...&lt;/label&gt;
+            ...
+          &lt;/div&gt;
+          ...
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    ```</code></pre></div></section><section class="main__item container item" id="undefined-css-.boton"><h3 class="item__heading"><a class="item__name" href="#css-.boton">.boton</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.boton {
+  button {
+          background-color: $color-borde;
+          color: white;
+          padding: 10px 30px;
+        }
+}</code>" data-collapsed=".boton { ... }"><code>.boton { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón dentro de la sección de productos.</p><pre><code>  Clase que define los estilos para el botón dentro de la sección de productos.
+  Establece el color de fondo y el color del texto utilizando variables, así como el relleno.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;contenedor&quot;&gt;
+      ...
+      &lt;div class=&quot;productos&quot;&gt;
+        ...
+        &lt;div class=&quot;boton&quot;&gt;
+          &lt;button&gt;...&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ```</code></pre></div></section><section class="main__item container item" id="undefined-css-.wrapper"><h3 class="item__heading"><a class="item__name" href="#css-.wrapper">.wrapper</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.wrapper {
+  text-align: center;
+
+  /// Estilos para el selector.
+  ///
+  /// Clase que define los estilos para el selector.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// &lt;div class=&quot;wrapper&quot;&gt;
+  ///   &lt;div class=&quot;seleccionador&quot;&gt;...&lt;/div&gt;
+  /// &lt;/div&gt;
+  /// ```
+  .seleccionador{
+
+    /// Estilos para el formulario dentro del selector.
+    ///
+    /// Clase que define los estilos para el formulario dentro del selector.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;seleccionador&quot;&gt;
+    ///     &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    form{
+
+      /// Estilos para los campos dentro del formulario.
+      ///
+      /// Clase que define los estilos para los campos dentro del formulario.
+      /// Establece la alineación de los elementos al centro, la visualización como columna, el margen inferior y el ancho del 30% para los campos de entrada.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;seleccionador&quot;&gt;
+      ///     &lt;form class=&quot;form&quot;&gt;
+      ///       &lt;div class=&quot;campos&quot;&gt;...&lt;/div&gt;
+      ///     &lt;/form&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .campos{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        label{
+          margin-bottom: 3%;
+        }
+        input{
+          margin-bottom: 3%;
+          width: 30%;
+        }
+      }
+
+      /// Estilos para el botón dentro del formulario.
+      ///
+      /// Clase que define los estilos para el botón dentro del formulario.
+      /// Establece el color del texto, el color de fondo utilizando una variable y el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;seleccionador&quot;&gt;
+      ///     &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+      ///     &lt;button&gt;...&lt;/button&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      button{
+        color: white;
+        background-color: $color-borde;
+        padding: 10px 30px;
+      }
+    }
+  }
+}</code>" data-collapsed=".wrapper { ... }"><code>.wrapper { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el contenedor principal.</p><p>Clase que define los estilos para el contenedor principal. Establece la alineación del texto al centro.</p><p>Ejemplo de uso:</p><pre><code class="language-html">&lt;div class=&quot;wrapper&quot;&gt;...&lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-.seleccionador"><h3 class="item__heading"><a class="item__name" href="#css-.seleccionador">.seleccionador</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.seleccionador {
+  /// Estilos para el formulario dentro del selector.
+    ///
+    /// Clase que define los estilos para el formulario dentro del selector.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// &lt;div class=&quot;wrapper&quot;&gt;
+    ///   &lt;div class=&quot;seleccionador&quot;&gt;
+    ///     &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+    ///   &lt;/div&gt;
+    /// &lt;/div&gt;
+    /// ```
+    form{
+
+      /// Estilos para los campos dentro del formulario.
+      ///
+      /// Clase que define los estilos para los campos dentro del formulario.
+      /// Establece la alineación de los elementos al centro, la visualización como columna, el margen inferior y el ancho del 30% para los campos de entrada.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;seleccionador&quot;&gt;
+      ///     &lt;form class=&quot;form&quot;&gt;
+      ///       &lt;div class=&quot;campos&quot;&gt;...&lt;/div&gt;
+      ///     &lt;/form&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .campos{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        label{
+          margin-bottom: 3%;
+        }
+        input{
+          margin-bottom: 3%;
+          width: 30%;
+        }
+      }
+
+      /// Estilos para el botón dentro del formulario.
+      ///
+      /// Clase que define los estilos para el botón dentro del formulario.
+      /// Establece el color del texto, el color de fondo utilizando una variable y el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;seleccionador&quot;&gt;
+      ///     &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+      ///     &lt;button&gt;...&lt;/button&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      button{
+        color: white;
+        background-color: $color-borde;
+        padding: 10px 30px;
+      }
+    }
+}</code>" data-collapsed=".seleccionador { ... }"><code>.seleccionador { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el selector.</p><p>Clase que define los estilos para el selector.</p><p>Ejemplo de uso:</p><pre><code class="language-html">  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;seleccionador&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;</code></pre></div></section><section class="main__item container item" id="undefined-css-form"><h3 class="item__heading"><a class="item__name" href="#css-form">form</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>form {
+  /// Estilos para los campos dentro del formulario.
+      ///
+      /// Clase que define los estilos para los campos dentro del formulario.
+      /// Establece la alineación de los elementos al centro, la visualización como columna, el margen inferior y el ancho del 30% para los campos de entrada.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;seleccionador&quot;&gt;
+      ///     &lt;form class=&quot;form&quot;&gt;
+      ///       &lt;div class=&quot;campos&quot;&gt;...&lt;/div&gt;
+      ///     &lt;/form&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      .campos{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        label{
+          margin-bottom: 3%;
+        }
+        input{
+          margin-bottom: 3%;
+          width: 30%;
+        }
+      }
+
+      /// Estilos para el botón dentro del formulario.
+      ///
+      /// Clase que define los estilos para el botón dentro del formulario.
+      /// Establece el color del texto, el color de fondo utilizando una variable y el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// &lt;div class=&quot;wrapper&quot;&gt;
+      ///   &lt;div class=&quot;seleccionador&quot;&gt;
+      ///     &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+      ///     &lt;button&gt;...&lt;/button&gt;
+      ///   &lt;/div&gt;
+      /// &lt;/div&gt;
+      /// ```
+      button{
+        color: white;
+        background-color: $color-borde;
+        padding: 10px 30px;
+      }
+}</code>" data-collapsed="form { ... }"><code>form { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el formulario dentro del selector.</p><pre><code>Clase que define los estilos para el formulario dentro del selector.
+
+Ejemplo de uso:
+```html
+&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div class=&quot;seleccionador&quot;&gt;
+    &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+```</code></pre></div></section><section class="main__item container item" id="undefined-css-.campos"><h3 class="item__heading"><a class="item__name" href="#css-.campos">.campos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>.campos {
+  align-items: center;
+        display: flex;
+        flex-direction: column;
+        label{
+          margin-bottom: 3%;
+        }
+        input{
+          margin-bottom: 3%;
+          width: 30%;
+        }
+}</code>" data-collapsed=".campos { ... }"><code>.campos { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para los campos dentro del formulario.</p><pre><code>  Clase que define los estilos para los campos dentro del formulario.
+  Establece la alineación de los elementos al centro, la visualización como columna, el margen inferior y el ancho del 30% para los campos de entrada.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;seleccionador&quot;&gt;
+      &lt;form class=&quot;form&quot;&gt;
+        &lt;div class=&quot;campos&quot;&gt;...&lt;/div&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ```</code></pre></div></section><section class="main__item container item" id="undefined-css-button"><h3 class="item__heading"><a class="item__name" href="#css-button">button</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="<code>button {
+  color: white;
+        background-color: $color-borde;
+        padding: 10px 30px;
+}</code>" data-collapsed="button { ... }"><code>button { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Estilos para el botón dentro del formulario.</p><pre><code>  Clase que define los estilos para el botón dentro del formulario.
+  Establece el color del texto, el color de fondo utilizando una variable y el relleno.
+
+  Ejemplo de uso:
+  ```html
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;seleccionador&quot;&gt;
+      &lt;form class=&quot;form&quot;&gt;...&lt;/form&gt;
+      &lt;button&gt;...&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ```</code></pre></div></section></section><section class="main__sub-section" id="undefined-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="undefined-function-lighten"><h3 class="item__heading"><a class="item__name" href="#function-lighten">lighten</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function lighten() { 
+  @return mix(white, $color, $amount);
+ }" data-collapsed="@function lighten() { ... }"><code>@function lighten() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para aclarar un color.</p><p>La función <code>lighten</code> mezcla el color blanco (<code>#ffffff</code>) con el color especificado utilizando la función <code>mix()</code> de Sass. El resultado es un color más claro.</p><p>Parámetros:</p><ul><li><code>$color</code>: El color base que se desea aclarar.</li><li><code>$amount</code>: La cantidad de aclarado, representada como un número entre 0 y 100.</li></ul><p>Retorna:</p><ul><li>El color resultante después de aplicar el aclarado.</li></ul><p>Ejemplo de uso:</p><pre><code class="language-scss">$color-aclarado: lighten(#ff0000, 20%);</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section><section class="main__item container item" id="undefined-function-font-familia-titulo"><h3 class="item__heading"><a class="item__name" href="#function-font-familia-titulo">font-familia-titulo</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function font-familia-titulo() { 
+  @return &quot;Arial, sans-serif&quot;;
+ }" data-collapsed="@function font-familia-titulo() { ... }"><code>@function font-familia-titulo() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Función para obtener la familia de fuentes del título.</p><p>La función <code>font-familia-titulo</code> devuelve la cadena de texto que representa la familia de fuentes utilizada para los títulos. En este caso, se devuelve &quot;Arial, sans-serif&quot;.</p><p>Retorna:</p><ul><li>La familia de fuentes para los títulos.</li></ul><p>Ejemplo de uso:</p><pre><code class="language-scss">$familia-titulo: font-familia-titulo();</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section><section class="main__sub-section" id="undefined-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="undefined-mixin-tabla-estilos"><h3 class="item__heading"><a class="item__name" href="#mixin-tabla-estilos">tabla-estilos</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin tabla-estilos() { 
+  /// Estilos para la tabla.
+  ///
+  /// Establece el borde y el color de fondo de la tabla.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  th, td {
+    border: 1px solid $color-borde;
+    padding: 10px;
+  }
+
+  /// Estilos para las cabeceras de columna de la tabla.
+  ///
+  /// Establece el color de fondo y el color del texto de las cabeceras de columna.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  th {
+    background-color: $color-cabecera;
+    color: $color-texto-cabecera;
+  }
+ }" data-collapsed="@mixin tabla-estilos() { ... }"><code>@mixin tabla-estilos() { ... }</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Mixin para los estilos de la tabla.</p><p>El mixin <code>tabla-estilos</code> define los estilos generales de una tabla, incluyendo el borde y el color de fondo. También establece los estilos de las celdas, incluyendo el borde y el relleno, y los estilos de las cabeceras de columna, incluyendo el color de fondo y el color del texto.</p><p>Ejemplo de uso:</p><pre><code class="language-scss">.mi-tabla {
+  @include tabla-estilos;
+}</code></pre></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p><h3 class="item__sub-heading">Requires</h3><ul class="list-unstyled"><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-borde"><code>color-borde</code></a></li><li class="item__description item__description--inline"><span class="item__cross-type">[variable]</span> <a href="#undefined-variable-color-borde"><code>color-borde</code></a></li></ul></section></section><section class="main__sub-section" id="undefined-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="undefined-variable-color-borde"><h3 class="item__heading"><a class="item__name" href="#variable-color-borde">color-borde</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$color-borde: #000000;</code></pre></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Variables de estilo</p><p>Variables utilizadas para definir colores, tamaños y otros estilos.</p><p>Ejemplo de uso:</p><pre><code class="language-scss">$color-borde: #000000;
+$color-fondo: #95e5c8;
+...</code></pre></div><h3 class="item__sub-heading">Used by</h3><ul class="list-unstyled"><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-tabla-estilos"><code>tabla-estilos</code></a></li><li><span class="item__cross-type">[mixin]</span> <a href="#undefined-mixin-tabla-estilos"><code>tabla-estilos</code></a></li></ul></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --> <span class="project-info__name">SassDoc</span><!-- Version --><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>

@@ -1,0 +1,236 @@
+/// Importa las variables SCSS.
+@import 'vars';
+/// Importa las funciones SCSS.
+@import 'functions';
+/// Importa los mixins SCSS.
+@import 'mixins';
+
+
+/// Estilos para el contenedor principal.
+///
+/// Clase que define el estilo del contenedor principal.
+/// Centra el texto horizontalmente.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+///
+.wrapper {
+  text-align: center;
+}
+
+/// Estilos para la tabla de productos.
+///
+/// Clase que define los estilos de la tabla de productos.
+/// Incluye la anchura, el colapso de borde y el margen superior.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <table class="tabla-productos">...</table>
+/// ```
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  /// Utiliza el mixin `tabla-estilos` para aplicar estilos a la tabla.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <table class="tabla-productos">
+  ///   <thead>...</thead>
+  ///   <tbody>...</tbody>
+  /// </table>
+  /// ```
+  @include tabla-estilos;
+}
+
+/// Estilos para las filas pares de la tabla.
+///
+/// Establece el color de fondo de las filas pares utilizando una variable de color
+/// y una función para oscurecer el color de fondo.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <tr>...</tr>
+/// ```
+tr:nth-child(even) {
+  background-color: $color-fondo-par;
+
+  /// Utiliza la función `lighten()` para oscurecer el color de fondo de las filas pares.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <tr>...</tr>
+  /// ```
+  background-color: lighten($color-fondo-par, 10%);
+}
+
+/// Estilos para las filas al pasar el cursor por encima.
+///
+/// Establece el color de fondo de las filas al pasar el cursor por encima utilizando una variable de color.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <tr>...</tr>
+/// ```
+tr:hover {
+  background-color: $color-fondo-hover;
+}
+
+/// Estilos para las celdas de encabezado y datos.
+///
+/// Establece el relleno y la alineación del texto para las celdas de encabezado y datos.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <th>...</th>
+/// <td>...</td>
+/// ```
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/// Estilos para el título de la página.
+///
+/// Establece el color, el tamaño de fuente, el margen superior y la alineación del texto para el título de la página.
+/// Utiliza una función para obtener la familia de fuentes del título.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <h1>...</h1>
+/// ```
+h1 {
+  color: $color-titulo;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+
+  /* Utilizando una función para aplicar estilos de fuente */
+  font-family: font-familia-titulo();
+}
+
+/// Estilos para el contenedor de productos.
+///
+/// Clase que define los estilos del contenedor de productos.
+/// Utiliza flexbox para alinear los elementos en la parte inferior y establece un margen inferior.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="producto">...</div>
+/// ```
+.producto {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10%;
+
+  /// Estilos para la imagen dentro del contenedor de productos.
+  ///
+  /// Clase que define los estilos de la imagen dentro del contenedor de productos.
+  /// Establece el margen derecho, el tamaño máximo, el ancho y la altura.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="producto">
+  ///   <img src="..." alt="..." />
+  ///   ...
+  /// </div>
+  /// ```
+  img {
+    margin-right: 10px;
+    max-width: $imagen-tamano-maximo;
+    width: 100%;
+    height: auto;
+  }
+
+  /// Estilos para la información dentro del contenedor de productos.
+  ///
+  /// Clase que define los estilos de la información dentro del contenedor de productos.
+  /// Utiliza flexbox para organizar los elementos en una columna.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="producto">
+  ///   ...
+  ///   <div class="info">...</div>
+  /// </div>
+  /// ```
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    /// Estilos para los párrafos dentro de la información.
+    ///
+    /// Clase que define los estilos de los párrafos dentro de la información.
+    /// Establece el margen y el relleno inferior.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="producto">
+    ///   ...
+    ///   <div class="info">
+    ///     <p>...</p>
+    ///     ...
+    ///   </div>
+    /// </div>
+    /// ```
+    p {
+      margin: 0;
+      padding-bottom: 30px;
+
+      /// Estilos para el nombre dentro de los párrafos.
+      ///
+      /// Clase que define los estilos del nombre dentro de los párrafos.
+      /// Establece el tamaño de fuente y el color del texto.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="producto">
+      ///   ...
+      ///   <div class="info">
+      ///     <p>
+      ///       <span class="nombre">...</span>
+      ///     </p>
+      ///     ...
+      ///   </div>
+      /// </div>
+      /// ```
+      .nombre{
+        font-size: 350%;
+        color: gray;
+      }
+
+      .precio{
+        font-size: 200%;
+        font-weight: bold;
+      }
+    }
+
+    /// Estilos para el botón dentro del contenedor de productos.
+    ///
+    /// Clase que define los estilos del botón dentro del contenedor de productos.
+    /// Establece la visualización como bloque, el margen superior, el color de fondo, el color del texto, el borde y el relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="producto">
+    ///   ...
+    ///   <div class="info">
+    ///     ...
+    ///     <button class="boton">...</button>
+    ///   </div>
+    /// </div>
+    /// ```
+    .boton {
+      display: block;
+      margin-top: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 80px;
+    }
+  }
+
+
+}
