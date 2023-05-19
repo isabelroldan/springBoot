@@ -1,0 +1,145 @@
+@import "vars";
+@import "functions";
+@import "mixins";
+
+/// Estilos para el contenedor principal.
+///
+/// Clase que define los estilos para el contenedor principal.
+/// Establece el color de fondo y la alineación del texto.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+/// ```
+.wrapper {
+  background-color: #ffffff;
+  text-align: center;
+
+  /// Estilos para el contenedor interno.
+  ///
+  /// Clase que define los estilos para el contenedor interno.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="wrapper">
+  ///   <div class="contenedor">...</div>
+  /// </div>
+  /// ```
+  .contenedor {
+
+    /// Estilos para el título del formulario.
+    ///
+    /// Clase que define los estilos para el título del formulario.
+    /// Establece el color del texto utilizando una variable.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="wrapper">
+    ///   <div class="contenedor">
+    ///     <h2 class="title-form">...</h2>
+    ///     ...
+    ///   </div>
+    /// </div>
+    /// ```
+    .title-form {
+      color: $color-titulo;
+    }
+
+    /// Estilos para la sección de productos.
+    ///
+    /// Clase que define los estilos para la sección de productos.
+    /// Establece el color de fondo utilizando una variable y el relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="wrapper">
+    ///   <div class="contenedor">
+    ///     ...
+    ///     <div class="productos">...</div>
+    ///   </div>
+    /// </div>
+    /// ```
+    .productos {
+      background-color: $color-fondo-hover;
+      padding: 20px;
+
+      /// Estilos para cada producto en la sección de productos.
+      ///
+      /// Clase que define los estilos para cada producto en la sección de productos.
+      /// Establece el margen inferior.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="wrapper">
+      ///   <div class="contenedor">
+      ///     ...
+      ///     <div class="productos">
+      ///       <div class="producto">...</div>
+      ///       ...
+      ///     </div>
+      ///   </div>
+      /// </div>
+      /// ```
+      .producto {
+        margin-bottom: 5%;
+
+        /// Estilos para las etiquetas dentro de cada producto.
+        ///
+        /// Clase que define los estilos para las etiquetas dentro de cada producto.
+        /// Establece el color del texto utilizando una variable y el margen derecho.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// <div class="wrapper">
+        ///   <div class="contenedor">
+        ///     ...
+        ///     <div class="productos">
+        ///       <div class="producto">
+        ///         <label>...</label>
+        ///         ...
+        ///       </div>
+        ///       ...
+        ///     </div>
+        ///   </div>
+        /// </div>
+        /// ```
+        label {
+          color: $color-texto-cabecera;
+          margin-right: 3%;
+        }
+
+        input[type="text"] {
+          border: 1px solid $color-borde;
+          padding: 5px;
+        }
+      }
+
+      /// Estilos para el botón dentro de la sección de productos.
+      ///
+      /// Clase que define los estilos para el botón dentro de la sección de productos.
+      /// Establece el color de fondo y el color del texto utilizando variables, así como el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="wrapper">
+      ///   <div class="contenedor">
+      ///     ...
+      ///     <div class="productos">
+      ///       ...
+      ///       <div class="boton">
+      ///         <button>...</button>
+      ///       </div>
+      ///     </div>
+      ///   </div>
+      /// </div>
+      /// ```
+      .boton {
+        button {
+          background-color: $color-borde;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+}

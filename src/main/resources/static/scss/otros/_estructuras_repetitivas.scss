@@ -1,0 +1,114 @@
+/// Importa las variables SCSS.
+@import 'vars';
+
+/// Estilos para el contenedor principal.
+///
+/// Clase que define el estilo del contenedor principal.
+/// Centra el contenido horizontal y verticalmente.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+/// ```
+.wrapper {
+  /*margin: 0 auto;
+  max-width: 960px;*/
+  justify-content: center;
+  align-items: center;
+}
+
+
+/// Estilos para el menú.
+///
+/// Clase que define el estilo del menú.
+/// Establece el color de fondo, el color del texto y el relleno.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <nav class="menu">...</nav>
+///
+/* Estilos para el menú */
+.menu {
+  background-color: $fondo-menu;
+  color: $texto-menu;
+  padding: 10px;
+
+  /// Estilos para los elementos del menú.
+  ///
+  /// Clase que define el estilo de los elementos del menú.
+  /// Los elementos se muestran en línea y tienen un margen derecho.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <nav class="menu">
+  ///   <ul>
+  ///     <li class="menu-item">...</li>
+  ///   </ul>
+  /// </nav>
+  ///
+  .menu-item {
+    display: inline-block;
+    margin-right: 10px;
+
+    /// Estilos para los enlaces dentro del menú.
+    ///
+    /// Clase que define el estilo de los enlaces dentro de los elementos del menú.
+    /// Establece el color del texto y elimina la decoración de subrayado.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <nav class="menu">
+    ///   <ul>
+    ///     <li class="menu-item">
+    ///       <a href="#">...</a>
+    ///     </li>
+    ///   </ul>
+    /// </nav>
+    ///
+    a {
+      color: $texto-menu;
+      text-decoration: none;
+    }
+
+    /// Estilos para los submenús del menú.
+    ///
+    /// Clase que define el estilo de los submenús dentro de los elementos del menú.
+    /// Los submenús se ocultan inicialmente y tienen un color de fondo y un relleno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <nav class="menu">
+    ///   <ul>
+    ///     <li class="menu-item">
+    ///       <a href="#">...</a>
+    ///       <ul class="sub-menu">...</ul>
+    ///     </li>
+    ///   </ul>
+    /// </nav>
+    ///
+    .sub-menu {
+      display: none;
+      background-color: #a6a6a6;
+      padding: 10px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/// Estilos para mostrar el submenú al pasar el ratón por encima.
+///
+/// Clase que define el estilo para mostrar el submenú cuando se pasa el ratón por encima de un elemento del menú.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <nav class="menu">
+///   <ul>
+///     <li class="menu-item">...</li>
+///   </ul>
+/// </na
+.menu-item:hover .sub-menu {
+  display: block;
+}

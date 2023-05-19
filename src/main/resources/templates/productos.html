@@ -3,34 +3,71 @@
 <head>
     <title>Isa</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="/css/productos.css" rel="stylesheet" />
 </head>
 <body>
-<div class="wrapper bg-dark">
+<div class="wrapper">
     <!--Menu-->
     <nav class="menu">
         <ol>
-            <li class="menu-item"><a href="/">Inicio</a></li>
+            <li class="menu-item"><a href="/productos">Inicio</a></li>
             <li class="menu-item">
                 <a href="#0">Producto</a>
                 <ol class="sub-menu">
                     <li class="menu-item"><a href="/productos">Ver productos</a></li>
                     <li class="menu-item"><a href="/productos/nuevo">Añadir producto</a></li>
+                    <li class="menu-item"><a href="/productos/edit">Editar producto</a></li>
+                    <li class="menu-item"><a href="/productos/delete">Borrar producto</a></li>
                 </ol>
             </li>
+            <li class="menu-item"><a href="/carrito">🛒</a></li>
         </ol>
     </nav>
 
-</div>
+
 
 <h1>Productos</h1>
 <div>
-    <table>
-        <tr th:each="producto,iter: ${productos}">
-            <td th:text="${producto.id}"></td>
-            <td th:text="${producto.nombre}"></td>
-            <td th:text="${producto.precio}"></td>
-        </tr>
-    </table>
+    <div th:if="${mensaje}">
+        <p th:text="${mensaje}"></p>
+    </div>
+
+    <div class="producto" th:each="producto : ${productos}" th:if="${producto.id == 1}">
+        <img class="crema" src="/imagenes/crema1.jpg" alt="Crema 1">
+        <div class="info">
+            <p><span class="nombre" th:text="${producto.nombre}"></span></p>
+            <p><span class="precio" th:text="${producto.precio}"></span>€</p>
+            <a href="/productos/comprar/1" class="boton">Comprar</a>
+        </div>
+    </div>
+
+    <div class="producto" th:each="producto : ${productos}" th:if="${producto.id == 2}">
+        <img src="/imagenes/rojo1.jpg" alt="Rojo">
+        <div class="info">
+            <p><span class="nombre" th:text="${producto.nombre}"></span></p>
+            <p><span class="precio" th:text="${producto.precio}"></span>€</p>
+            <a href="/productos/comprar/2" class="boton">Comprar</a>
+        </div>
+    </div>
+
+    <div class="producto" th:each="producto : ${productos}" th:if="${producto.id == 4}">
+        <img src="/imagenes/dorado1.jpg" alt="Dorado 1">
+        <div class="info">
+            <p><span class="nombre" th:text="${producto.nombre}"></span></p>
+            <p><span class="precio" th:text="${producto.precio}"></span>€</p>
+            <a href="/productos/comprar/4" class="boton">Comprar</a>
+        </div>
+    </div>
+</div>
+
+<table>
+    <tr th:each="producto,iter: ${productos}">
+        <td th:text="${producto.id}"></td>
+        <td th:text="${producto.nombre}"></td>
+        <td th:text="${producto.precio}"></td>
+    </tr>
+</table>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

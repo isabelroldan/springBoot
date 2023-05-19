@@ -12,6 +12,13 @@ import java.util.List;
 @Entity//Es una entidad
 @Table(name="CarritoCompra")//Como quiereas que se llame la tabla
 public class CarritoCompra {
+
+    public CarritoCompra() {
+        this.productos = new ArrayList<>();
+        this.nombre="";
+    }
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;

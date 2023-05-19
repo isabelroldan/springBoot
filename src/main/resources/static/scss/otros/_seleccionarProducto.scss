@@ -1,0 +1,88 @@
+/// Estilos para el contenedor principal.
+///
+/// Clase que define los estilos para el contenedor principal.
+/// Establece la alineación del texto al centro.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+/// ```
+.wrapper{
+  text-align: center;
+
+  /// Estilos para el selector.
+  ///
+  /// Clase que define los estilos para el selector.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="wrapper">
+  ///   <div class="seleccionador">...</div>
+  /// </div>
+  /// ```
+  .seleccionador{
+
+    /// Estilos para el formulario dentro del selector.
+    ///
+    /// Clase que define los estilos para el formulario dentro del selector.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="wrapper">
+    ///   <div class="seleccionador">
+    ///     <form class="form">...</form>
+    ///   </div>
+    /// </div>
+    /// ```
+    form{
+
+      /// Estilos para los campos dentro del formulario.
+      ///
+      /// Clase que define los estilos para los campos dentro del formulario.
+      /// Establece la alineación de los elementos al centro, la visualización como columna, el margen inferior y el ancho del 30% para los campos de entrada.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="wrapper">
+      ///   <div class="seleccionador">
+      ///     <form class="form">
+      ///       <div class="campos">...</div>
+      ///     </form>
+      ///   </div>
+      /// </div>
+      /// ```
+      .campos{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        label{
+          margin-bottom: 3%;
+        }
+        input{
+          margin-bottom: 3%;
+          width: 30%;
+        }
+      }
+
+      /// Estilos para el botón dentro del formulario.
+      ///
+      /// Clase que define los estilos para el botón dentro del formulario.
+      /// Establece el color del texto, el color de fondo utilizando una variable y el relleno.
+      ///
+      /// Ejemplo de uso:
+      /// ```html
+      /// <div class="wrapper">
+      ///   <div class="seleccionador">
+      ///     <form class="form">...</form>
+      ///     <button>...</button>
+      ///   </div>
+      /// </div>
+      /// ```
+      button{
+        color: white;
+        background-color: $color-borde;
+        padding: 10px 30px;
+      }
+    }
+  }
+}

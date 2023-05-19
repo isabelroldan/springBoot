@@ -1,0 +1,60 @@
+/// Importa las variables SCSS.
+@import 'vars';
+
+/// Mixin para los estilos de la tabla.
+///
+/// El mixin `tabla-estilos` define los estilos generales de una tabla, incluyendo
+/// el borde y el color de fondo. También establece los estilos de las celdas, incluyendo
+/// el borde y el relleno, y los estilos de las cabeceras de columna, incluyendo el color de fondo
+/// y el color del texto.
+///
+/// Ejemplo de uso:
+/// ```scss
+/// .mi-tabla {
+///   @include tabla-estilos;
+/// }
+/// ```
+@mixin tabla-estilos {
+  /// Estilos para la tabla.
+  ///
+  /// Establece el borde y el color de fondo de la tabla.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  border: 1px solid $color-borde;
+  background-color: $color-fondo;
+
+  /// Estilos para las celdas de la tabla.
+  ///
+  /// Establece el borde y el relleno de las celdas.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  th, td {
+    border: 1px solid $color-borde;
+    padding: 10px;
+  }
+
+  /// Estilos para las cabeceras de columna de la tabla.
+  ///
+  /// Establece el color de fondo y el color del texto de las cabeceras de columna.
+  ///
+  /// Ejemplo de uso:
+  /// ```scss
+  /// .mi-tabla {
+  ///   @include tabla-estilos;
+  /// }
+  /// ```
+  th {
+    background-color: $color-cabecera;
+    color: $color-texto-cabecera;
+  }
+}

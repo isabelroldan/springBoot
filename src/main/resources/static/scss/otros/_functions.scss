@@ -1,0 +1,35 @@
+/// Función para aclarar un color.
+///
+/// La función `lighten` mezcla el color blanco (`#ffffff`) con el color especificado
+/// utilizando la función `mix()` de Sass. El resultado es un color más claro.
+///
+/// Parámetros:
+/// - `$color`: El color base que se desea aclarar.
+/// - `$amount`: La cantidad de aclarado, representada como un número entre 0 y 100.
+///
+/// Retorna:
+/// - El color resultante después de aplicar el aclarado.
+///
+/// Ejemplo de uso:
+/// ```scss
+/// $color-aclarado: lighten(#ff0000, 20%);
+/// ```
+@function lighten($color, $amount) {
+  @return mix(white, $color, $amount);
+}
+
+/// Función para obtener la familia de fuentes del título.
+///
+/// La función `font-familia-titulo` devuelve la cadena de texto que representa
+/// la familia de fuentes utilizada para los títulos. En este caso, se devuelve "Arial, sans-serif".
+///
+/// Retorna:
+/// - La familia de fuentes para los títulos.
+///
+/// Ejemplo de uso:
+/// ```scss
+/// $familia-titulo: font-familia-titulo();
+/// ```
+@function font-familia-titulo() {
+  @return "Arial, sans-serif";
+}

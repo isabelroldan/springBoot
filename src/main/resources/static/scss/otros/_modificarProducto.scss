@@ -1,0 +1,90 @@
+/// Estilos para el contenedor principal.
+///
+/// Clase que define el estilo del contenedor principal.
+/// Centra el texto horizontalmente.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+/// ```
+.wrapper {
+  text-align: center;
+  /// Estilos para el contenedor interno.
+  ///
+  /// Clase que define el estilo del contenedor interno dentro del contenedor principal.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="wrapper">
+  ///   <div class="contenedor">...</div>
+  /// </div>
+  ///
+  .contenedor{
+    /// Estilos para los atributos dentro del contenedor.
+    ///
+    /// Clase que define el estilo de los atributos dentro del contenedor interno.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="wrapper">
+    ///   <div class="contenedor">
+    ///     <div class="atributos">...</div>
+    ///   </div>
+    /// </div>
+    ///
+    .atributos{
+      form{
+        /// Estilos para los atributos dentro del formulario.
+        ///
+        /// Clase que define el estilo de los atributos dentro del formulario.
+        /// Establece el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// <div class="wrapper">
+        ///   <div class="contenedor">
+        ///     <div class="atributos">
+        ///       <form>
+        ///         <div class="atributo">...</div>
+        ///         ...
+        ///       </form>
+        ///     </div>
+        ///   </div>
+        /// </div>
+        ///
+        .atributo{
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón dentro del formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color del texto, el color de fondo y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// <div class="wrapper">
+        ///   <div class="contenedor">
+        ///     <div class="atributos">
+        ///       <form>
+        ///         ...
+        ///         <div class="boton">
+        ///           <button>...</button>
+        ///         </div>
+        ///       </form>
+        ///     </div>
+        ///   </div>
+        /// </div>
+        ///
+        .boton{
+          button{
+            color: white;
+            background-color: black;
+            padding: 10px 30px;
+          }
+        }
+      }
+
+    }
+  }
+}

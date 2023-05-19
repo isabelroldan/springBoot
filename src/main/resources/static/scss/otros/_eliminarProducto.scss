@@ -1,0 +1,97 @@
+/// Estilos para el contenedor principal.
+///
+/// Clase que define el estilo del contenedor principal.
+/// Establece el color de fondo y alinea el contenido al centro.
+///
+/// Ejemplo de uso:
+/// ```html
+/// <div class="wrapper">...</div>
+/// ```
+.wrapper {
+  background-color: #ffffff;
+  text-align: center;
+
+  /// Estilos para el contenedor interno.
+  ///
+  /// Clase que define el estilo del contenedor interno dentro del contenedor principal.
+  /// Alinea el contenido al centro.
+  ///
+  /// Ejemplo de uso:
+  /// ```html
+  /// <div class="wrapper">
+  ///   <div class="contenedor">...</div>
+  /// </div>
+  ///
+  .contenedor{
+    text-align: center;
+
+    /// Estilos para el contenido dentro del contenedor.
+    ///
+    /// Clase que define el estilo del contenido dentro del contenedor interno.
+    /// Contiene un formulario y aplica estilos de disposición flexbox.
+    ///
+    /// Ejemplo de uso:
+    /// ```html
+    /// <div class="wrapper">
+    ///   <div class="contenedor">
+    ///     <div class="contenido">...</div>
+    ///   </div>
+    /// </div>
+    ///
+    .contenido{
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        /// Estilos para los campos de entrada en el formulario.
+        ///
+        /// Clase que define el estilo de los campos de entrada dentro del formulario.
+        /// Establece el ancho y el margen inferior.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// <div class="wrapper">
+        ///   <div class="contenedor">
+        ///     <div class="contenido">
+        ///       <form>
+        ///         <input type="text">...</input>
+        ///         ...
+        ///       </form>
+        ///     </div>
+        ///   </div>
+        /// </div>
+        ///
+        input{
+          width: 30%;
+          margin-bottom: 3%;
+        }
+
+        /// Estilos para el botón en el formulario.
+        ///
+        /// Clase que define el estilo del botón dentro del formulario.
+        /// Establece el color de fondo, el color del texto y el relleno.
+        ///
+        /// Ejemplo de uso:
+        /// ```html
+        /// <div class="wrapper">
+        ///   <div class="contenedor">
+        ///     <div class="contenido">
+        ///       <form>
+        ///         ...
+        ///         <button>...</button>
+        ///       </form>
+        ///     </div>
+        ///   </div>
+        /// </div>
+        ///
+        button{
+          background-color: black;
+          color: white;
+          padding: 10px 30px;
+        }
+      }
+    }
+  }
+}
