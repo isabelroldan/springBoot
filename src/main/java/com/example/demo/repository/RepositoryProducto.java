@@ -18,7 +18,7 @@ public interface RepositoryProducto extends JpaRepository<Producto, Long> { //lo
     public List<Producto> findAll(); //siempre debe ser publica
 
     @Query(value = "SELECT * FROM productos WHERE ID = ?1", nativeQuery = true)
-    //mejor usar la de dos puntos que se ve más abajo
+
     public Optional<Producto> findById(int id);
 
     @Modifying

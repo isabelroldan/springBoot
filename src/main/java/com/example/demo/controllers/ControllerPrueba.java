@@ -128,7 +128,10 @@ public class ControllerPrueba {
         );
 
         // Agregar el producto al carrito de compras
-        CarritoCompra carrito = new CarritoCompra();
+        Optional<CarritoCompra> carritoAuxiliar = carritoCompraRepository.findById(1);
+        CarritoCompra carrito = carritoAuxiliar.orElseThrow(() ->
+                new RuntimeException("El producto no existe")
+        );
         carrito.getProductos().add(producto);
         carrito.setNombre("Test");
 
